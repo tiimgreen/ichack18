@@ -1,0 +1,9 @@
+<h1>Ideas</h1>
+
+<div class="pull-right">
+  <%= link_to 'New Idea', new_idea_path, class: 'btn btn-large btn-primary' %>
+</div>
+
+<% @ideas.each do |idea| %>
+  <%= link_to idea.title, idea %>
+<% end %>

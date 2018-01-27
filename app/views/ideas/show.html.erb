@@ -1,0 +1,49 @@
+<input type="hidden" id="idea-id" value="<%= @idea.id %>">
+
+<div class="pull-right star-rating">
+  <% 5.times do |i| %>
+    <% class_name = @rating && i + 1 <= @rating.stars ? 'highlighted-permanent' : '' %>
+    <%= link_to submit_rating_path(@idea.id, i + 1), remote: true do %>
+      <i class="fa fa-star <%= class_name %>" aria-hidden="true"></i>
+    <% end %>
+  <% end %>
+</div>
+
+<h1><%= @idea.title %></h1>
+
+<h3>Created by: <%= link_to @idea.user.name, user_profile_path(@idea.user) %></h3>
+
+<p><%= @idea.description %></p>
+
+<ul class="feedback-tags">
+  <li class="feedback-tag">
+    <a href="#" class="feedback-tag-link">Test1</a>
+  </li>
+  <li class="feedback-tag">
+    <a href="#" class="feedback-tag-link">Test1</a>
+  </li>
+  <li class="feedback-tag">
+    <a href="#" class="feedback-tag-link">Test1</a>
+  </li>
+  <li class="feedback-tag">
+    <a href="#" class="feedback-tag-link">Test1</a>
+  </li>
+  <li class="feedback-tag">
+    <a href="#" class="feedback-tag-link">Test1</a>
+  </li>
+  <li class="feedback-tag">
+    <a href="#" class="feedback-tag-link">Test1</a>
+  </li>
+  <li class="feedback-tag">
+    <a href="#" class="feedback-tag-link">Test1</a>
+  </li>
+  <li class="feedback-tag">
+    <a href="#" class="feedback-tag-link">Test1</a>
+  </li>
+  <li class="feedback-tag">
+    <a href="#" class="feedback-tag-link">Test1</a>
+  </li>
+  <li class="feedback-tag">
+    <a href="#" class="feedback-tag-link">Test1</a>
+  </li>
+</ul>

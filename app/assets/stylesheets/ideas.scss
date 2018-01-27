@@ -1,0 +1,56 @@
+// Place all the styles related to the Ideas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.feedback-tags {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.feedback-tag {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.feedback-tag-link {
+  padding: 15px 20px;
+  color: #000;
+  border: 1px solid #c4c4c4;
+}
+
+.feedback-tag-link.selected {
+  background: #2ecc71;
+  border: 1px solid #2ecc71;
+  color: #fff;
+}
+
+.feedback-tag-link.selected:hover {
+  color: #fff;
+}
+
+.feedback-tag-link:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.star-rating {
+  background: #eee;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.star-rating .fa-star {
+  font-size: 2em;
+  color: #000;
+}
+
+.star-rating .fa-star.highlighted,
+.star-rating .fa-star.highlighted-permanent {
+  color: #f1c40f;
+}
+
+.star-rating .fa-star:hover {
+  cursor: pointer;
+}
